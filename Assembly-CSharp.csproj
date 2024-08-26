@@ -59,12 +59,13 @@
     <Compile Include="Assets\SciFi Warehouse Kit\Demo\Scripts\PlayRandomSound.cs" />
     <Compile Include="Assets\SciFi Warehouse Kit\Demo\Scripts\LightFlicker.cs" />
     <Compile Include="Assets\3.Script\Button.cs" />
+    <Compile Include="Assets\3.Script\ButtonManager.cs" />
     <Compile Include="Assets\SciFi Warehouse Kit\Demo\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\SciFi Warehouse Kit\Demo\Scripts\PushPhysics.cs" />
     <Compile Include="Assets\Stylized Astronaut\Character\Player.cs" />
     <Compile Include="Assets\Stylized Astronaut\Character\ThirdPersonCamera.cs" />
     <Compile Include="Assets\SciFi Warehouse Kit\Demo\Scripts\MouseComponent.cs" />
-    <Compile Include="Assets\3.Script\ButtonManager.cs" />
+    <Compile Include="Assets\3.Script\MonsterAI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ducks Assets\Super Rubber Duck Pack\Snowconesolid Assets ReadMe.txt" />

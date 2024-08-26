@@ -10,7 +10,7 @@ public class Button : MonoBehaviour
 
     private bool isPushed = false;
     public float moveSpeed = 3f;
-    public float downDistance = 1f;
+    public float downDistance = 0.5f;
     public float upDistance = 3.5f;
 
     public GameObject connectedDoor;
