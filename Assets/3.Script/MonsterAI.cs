@@ -79,7 +79,7 @@ public class MonsterAI : MonoBehaviour
     void Idle()
     {
         agent.ResetPath();
-        animator.SetInteger("State", 0);  // Idle 애니메이션 재생 //파라메터 이름 
+        animator.SetInteger("Idle", 0);  // Idle 애니메이션 재생 //파라메터 이름 
     }
 
     void Walk()
