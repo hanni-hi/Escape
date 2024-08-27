@@ -7,11 +7,12 @@ public class MonsterAI : MonoBehaviour
 {
     public Transform player;
     public float chaseRadius = 10f;    // 플레이어를 쫓아갈 반경
-    public float idleTime = 2f;        // Idle 상태 지속 시간
+    public float idleTime = 5f;        // Idle 상태 지속 시간
     public float walkSpeed = 2f;
     public float runSpeed = 6f;
-    public Transform[] walkPoints;     // 몬스터가 걸을 수 있는 지점들
 
+    private float walkRadius = 5f;    // 혼자 돌아다닐 반경 
+    private Transform[] walkPoints;     // 몬스터가 걸을 수 있는 지점들
     private NavMeshAgent agent;
     private Animator animator;
     private int currentState;          // 0: Idle, 1: Walk, 2: Run
@@ -46,7 +47,7 @@ public class MonsterAI : MonoBehaviour
         currentState = 2;  // Run 상태
         agent.speed = runSpeed;
         agent.SetDestination(player.position);
-        animator.SetInteger("State", 2);  // 애니메이션 상태 변경
+        animator.SetInteger("Run", 2);  // 애니메이션 상태 변경
     }
 
     void RandomBehavior()
@@ -86,6 +87,7 @@ public class MonsterAI : MonoBehaviour
         agent.speed = walkSpeed;
         int randomPoint = Random.Range(0, walkPoints.Length);
         agent.SetDestination(walkPoints[randomPoint].position);
-        animator.SetInteger("State", 1);  // Walk 애니메이션 재생
+        animator.SetInteger("Walk", 1);  // Walk 애니메이션 재생
     }
+
 }

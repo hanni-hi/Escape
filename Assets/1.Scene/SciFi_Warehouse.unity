@@ -104821,6 +104821,7 @@ GameObject:
   - component: {fileID: 8718304557604939693}
   - component: {fileID: 8718304557604939692}
   - component: {fileID: 8718304557604939694}
+  - component: {fileID: 8718304557604939695}
   m_Layer: 0
   m_Name: Shadowlop_Mesh
   m_TagString: Untagged
@@ -104879,6 +104880,25 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &8718304557604939695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8718304557604939691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 953f9cef1dc1a5c40ad847f047ccabbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 4268598163175250}
+  chaseRadius: 10
+  idleTime: 2
+  walkSpeed: 2
+  runSpeed: 6
+  walkPoints:
+  - {fileID: 0}
 --- !u!4 &8725701356049551938
 Transform:
   m_ObjectHideFlags: 0
